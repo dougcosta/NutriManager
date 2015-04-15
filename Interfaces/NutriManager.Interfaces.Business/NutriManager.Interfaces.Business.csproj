@@ -39,10 +39,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IRepositoryFactory.cs" />
+    <Compile Include="IPacientBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\NutriManager.Entities\NutriManager.Entities.csproj">
+      <Project>{c486ed63-8ad6-4708-a2ff-aa86eca43ad7}</Project>
+      <Name>NutriManager.Entities</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NutriManager.Interfaces.Repositories\NutriManager.Interfaces.Repositories.csproj">
       <Project>{6bec0022-85fb-4ec4-9db3-bec196a38e5b}</Project>
       <Name>NutriManager.Interfaces.Repositories</Name>

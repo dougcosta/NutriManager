@@ -42,14 +42,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IDataFactory.cs" />
     <Compile Include="IRepository.cs" />
+    <Compile Include="IRepositoryFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\NutriManager.Data\NutriManager.Data.csproj">
       <Project>{21e117a0-13aa-4ae6-8dc5-fc2833d598b1}</Project>
       <Name>NutriManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\NutriManager.Entities\NutriManager.Entities.csproj">
+      <Project>{c486ed63-8ad6-4708-a2ff-aa86eca43ad7}</Project>
+      <Name>NutriManager.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

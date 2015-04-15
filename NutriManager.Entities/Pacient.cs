@@ -3,11 +3,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace NutriManager.Entities
 {
-    public class Pacient
+    public class Pacient : EntityBase
     {
-        [Key]
-        public Guid Id { get; set; }
-
         [Required]
         public string Email { get; set; }
         

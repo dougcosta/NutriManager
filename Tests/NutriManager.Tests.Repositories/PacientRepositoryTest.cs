@@ -6,6 +6,7 @@ using Moq;
 using NutriManager.Interfaces.Repositories;
 using System.Data.Entity;
 using NutriManager.Data;
+using NutriManager.Data.Interfaces;
 
 namespace NutriManager.Tests.Repositories
 {

@@ -5,9 +5,10 @@ using System;
 
 namespace NutriManager.Business
 {
-    public class PacientBusiness
+    public class PacientBusiness : IPacientBusiness
     {
         private readonly IRepositoryFactory _repositoryFactory;
+
         public PacientBusiness(IRepositoryFactory repositoryFactory)
         {
             if (repositoryFactory == null)

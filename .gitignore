@@ -57,3 +57,9 @@ Temporary Items
 /NutriManager.Business/bin/Debug
 /NutriManager.Tests.Business/bin/Debug
 /NutriManager.Tests.Business/obj/Debug
+/Tests/NutriManager.Services.Tests/bin/Debug
+/Tests/NutriManager.Services.Tests/obj/Debug
+/NutriManager.Services.Util/bin/Debug
+/NutriManager.Services.Util/obj/Debug
+/NutriManager.Services/obj/Debug
+/NutriManager.Services/bin

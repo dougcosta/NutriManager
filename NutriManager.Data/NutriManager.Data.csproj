@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="DataContext.cs" />
     <Compile Include="DataFactory.cs" />
+    <Compile Include="Interfaces\IDataFactory.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

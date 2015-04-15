@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1414F495-65CD-4DA3-B5CE-FF8EDE978782}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NutriManager.Services.Util</RootNamespace>
+    <AssemblyName>NutriManager.Services.Util</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Root.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Interfaces\NutriManager.Interfaces.Business\NutriManager.Interfaces.Business.csproj">
+      <Project>{a7deb498-461e-427b-8789-f6badeb80688}</Project>
+      <Name>NutriManager.Interfaces.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\NutriManager.Interfaces.Repositories\NutriManager.Interfaces.Repositories.csproj">
+      <Project>{6bec0022-85fb-4ec4-9db3-bec196a38e5b}</Project>
+      <Name>NutriManager.Interfaces.Repositories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NutriManager.Business\NutriManager.Business.csproj">
+      <Project>{c4723639-eb72-4cba-855f-579771de1c63}</Project>
+      <Name>NutriManager.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NutriManager.Data\NutriManager.Data.csproj">
+      <Project>{21e117a0-13aa-4ae6-8dc5-fc2833d598b1}</Project>
+      <Name>NutriManager.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NutriManager.Entities\NutriManager.Entities.csproj">
+      <Project>{c486ed63-8ad6-4708-a2ff-aa86eca43ad7}</Project>
+      <Name>NutriManager.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NutriManager.Repositories\NutriManager.Repositories.csproj">
+      <Project>{01b6b644-69b0-4cb6-a20b-754b95f0718c}</Project>
+      <Name>NutriManager.Repositories</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using NutriManager.Entities;
+using System;
 
 namespace NutriManager.Interfaces.Repositories
 {
     public interface IRepository<T>
+        where T : EntityBase
     {
         /// <summary>
         /// Save the desired item

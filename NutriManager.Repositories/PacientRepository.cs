@@ -1,6 +1,8 @@
-﻿using NutriManager.Entities;
+﻿using NutriManager.Data.Interfaces;
+using NutriManager.Entities;
 using NutriManager.Interfaces.Repositories;
 using System;
+using System.Data.Entity;
 
 namespace NutriManager.Repositories
 {
@@ -25,9 +27,15 @@ namespace NutriManager.Repositories
             using(var context = this._dataFactory.Get())
             {
                 if (patient.Id.Equals(Guid.Empty))
+                {
                     patient.Id = Guid.NewGuid();
-
-                context.Pacients.Add(patient);
+                    context.Pacients.Add(patient);
+                }
+                else
+                {
+                    context.Entry(patient).State = EntityState.Modified;
+                }
+                
                 context.SaveChanges();
             }
         }
